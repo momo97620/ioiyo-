@@ -1,12 +1,12 @@
 3、证书申请（开TLS提升安全性必备）
-
-ping工具（检测解析域名是否生效）
-安装Acme
+安装 
 
 curl https://get.acme.sh | sh
+
 “你的邮箱”改成你的邮箱地址
 
 ~/.acme.sh/acme.sh --register-account -m 你的邮箱
+
 “你的域名”改成你前面解析好的域名
 
 ~/.acme.sh/acme.sh --issue -d 你的域名 --standalone

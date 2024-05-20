@@ -1,0 +1,68 @@
+docker run -d -p 3000:3000 \
+   -e OPENAI_API_KEY=sk-NS0GwP15rqdDfDaZ106bE32e7552419e811c526a02Db142d \
+   -e CODE=your-password \
+   yidadaa/chatgpt-next-web
+
+
+
+安装环境
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+
+
+检查
+
+ls
+
+
+安装
+
+sh get-docker.sh
+
+
+运行docker服务
+
+systemctl start docker
+
+⑤：检查docker服务运行状态
+systemctl status docker
+
+
+然后再执行这条命令（视频没讲，这是新加进去的，必须要输入这个条命令在输入下面的命令）
+systemctl enable docker
+
+当我们有一个openai的key又想通过客户端进行访问对话功能的时候，chatGPT-next-web是一个选项（仅限是一个选项，也有更好的方案）。
+
+2. 准备步骤
+服务器背景： Ubuntu 20.04
+
+2.1 docker的安装
+首先应该保证服务器具有Docker环境，如果没有需要以管理员的权限进行docker的安装，虽然网上有很多关于docker的安装方法，这里推荐系统自带的指令：
+
+sudo apt install docker.io
+1
+当安装完Docker以后，可以测试一下是否成功安装：
+
+docker ps
+1
+能够看到docker的运行容器的列表。
+
+2.2 拉取ChatGPT-Next-Web镜像
+这时候需要使用以下命令拉取最新的ChatGPT-Next-Web镜像：
+
+docker pull yidadaa/chatgpt-next-web
+
+
+
+再安装
+docker run -d -p 3000:3000 \
+   -e OPENAI_API_KEY=sk-NS0GwP15rqdDfDaZ106bE32e7552419e811c526a02Db142d \
+   -e CODE=mly976200 \
+   yidadaa/chatgpt-next-web
+
+
+
+
+
+
+

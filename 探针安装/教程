@@ -1,0 +1,84 @@
+1.先装哪吒监控
+
+Debian/Ubuntu安装下载工具
+
+apt update -y  && apt install -y curl
+
+
+官网版一键脚本
+
+curl -sS -O https://kejilion.pro/kejilion.sh && chmod +x kejilion.sh && ./kejilion.sh
+
+
+
+GitHub版一键脚本 部分小伙伴会遇到官网版出现大段乱码！就用GitHub版本吧！
+
+curl -sS -O https://raw.githubusercontent.com/kejilion/sh/main/kejilion.sh && chmod +x kejilion.sh && ./kejilion.s
+
+2.GitHub相关
+
+GitHub网址
+
+https://github.com/
+
+
+
+git认证
+
+https://vps.kjlion.com
+
+https://vps.kjlion.com/oauth2/callback
+
+
+
+git账号创建新的登录验证
+
+Client ID
+
+71d3b44cffc6533217165a
+
+Client secrets
+
+c4c28d758015414350ee9rsefd1e46c1f021f6b
+3.反向代理到域名
+
+官网版一键脚本
+
+curl -sS -O https://kejilion.pro/kejilion.sh && chmod +x kejilion.sh && ./kejilion.sh
+
+
+GitHub版一键脚本 部分小伙伴会遇到官网版出现大段乱码！就用GitHub版本吧！
+
+curl -sS -O https://raw.githubusercontent.com/kejilion/sh/main/kejilion.sh && chmod +x kejilion.sh && ./kejilion.sh
+
+
+4.机器人报警相关
+
+电报机器人创建者
+
+@BotFather
+
+电报查找我的数字id
+
+@userinfobot
+
+
+
+机器人密钥
+51588114fdgfdgfdgghgcq93yNaxzhAjwR29K0Io
+
+我的电报ID
+
+14000545422
+
+
+
+报警url代码
+
+https://api.telegram.org/bot5103515355:AAEq_SH_2Mgrj79-zkA2BUALX-5aZn67P0w/sendMessage?chat_id=1406209830&text=#NEZHA#
+
+
+
+报警规则（每隔10秒检测一次）
+
+[{"Type":"offline","Duration":10}]

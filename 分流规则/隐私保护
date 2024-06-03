@@ -1,0 +1,9 @@
+# 隐私保护规则列表
+https://easylist.to/easylist/easylist.txt, tag=EasyList, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
+https://easylist.to/easylist/easyprivacy.txt, tag=EasyPrivacy, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
+
+# 防止运营商劫持规则列表
+https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ISP-Hijack.txt, tag=Anti-ISP-Hijack, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
+
+# 综合规则列表
+https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt, tag=AdGuardDNS, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
